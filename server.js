@@ -9,7 +9,7 @@ app.use(cors());
 app.get('/api/aware', (req, res) => {
   res.json({
     status: 'success',
-    message: 'aware',
+    message: 'aaware',
     timestamp: new Date().toISOString(),
     server: 'sync-server-v1.0',
     uptime: process.uptime()
@@ -28,3 +28,4 @@ app.get('/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor de sincronização rodando na porta ${PORT}`);
 });
+
